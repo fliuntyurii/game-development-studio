@@ -12,25 +12,25 @@
     <div id="firstBackground">
       <div class="navBar">
         <img src="//res2.weblium.site/res/5fe40fc16a0a8300222a3051/5fea41c8674aef00211ee9b1" alt="">
-        <input class='menu__toggle' type="checkbox" />
+        <input onclick="openBurger()" class='menu__toggle' type="checkbox" />
             <label class='menu__btn' for='menu__toggle'>
                 <span></span>
             </label>
-            <nav class='menu__box'>
+            <nav id="menu" class='menu__box'>
                 <div class='menu__item'>
-                    <a >- About Us</a>
+                    <a onclick="closeBurger()" href="#aboutUs">- About Us</a>
                 </div>
                 <div class='menu__item'>
-                    <a >- Top Games</a>
+                    <a onclick="closeBurger()" href="#topGames">- Top Games</a>
                 </div>
                 <div class='menu__item'>
-                    <a >- New Mobile Game</a>
+                    <a onclick="closeBurger()" href="#newMobileGame">- New Mobile Game</a>
                 </div>
                 <div class='menu__item'>
-                    <a >- Our Team</a>
+                    <a onclick="closeBurger()" href="#ourTeam">- Our Team</a>
                 </div>
                 <div class='menu__item'>
-                    <a>- Contacts</a>
+                    <a onclick="closeBurger()" href="#contacts">- Contacts</a>
                 </div>
             </nav>
             <div class="headerNavBar">

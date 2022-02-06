@@ -459,6 +459,9 @@ footer span {
 .topGames h2 {
     margin-top: 0;
 }
+.pageContact p {
+    font-family: Nunito, sans-serif;
+}
 
 @media screen and (min-width: 1700px) {
     .secondBlock {
