@@ -109,3 +109,22 @@ const prevTeamSlide = () => {
         return n = 3;
     }
 }
+
+let isOpened = false;
+
+const closeBurger = () => {
+    document.getElementById('menu').style.display = 'none';
+    document.getElementsByClassName('menu__toggle')[0].checked = false;
+    isOpened = false;
+}
+
+const openBurger = () => {
+    if (!isOpened) {
+        document.getElementById('menu').style.display = 'block';
+        return isOpened = true;
+    }
+    if (isOpened) {
+        document.getElementById('menu').style.display = 'none';
+        return isOpened = false;
+    }
+}
