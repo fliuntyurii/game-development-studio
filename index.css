@@ -7,7 +7,7 @@
     min-height: 100%;
     background-size: cover;
 }
-a {
+.menu__item a {
     text-decoration: none;
     color: white;
 }
@@ -699,6 +699,7 @@ footer span {
 }
 
 .menu__box {
+    position: fixed;
     display: block;
     position: fixed;
     visibility: hidden;
