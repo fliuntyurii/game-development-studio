@@ -7,6 +7,10 @@
     min-height: 100%;
     background-size: cover;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 .headerNavBar {
     display: none;
 }
@@ -174,7 +178,7 @@ h2, p {
 }
 .carouselItem {
     background-color: rgb(14, 49, 84);
-    min-width: 400px;
+    width: 400px;
 }
 .topGames h2, .subscription h2 {
     color: white;
@@ -452,14 +456,67 @@ footer span {
     display: flex;
     flex-direction: column;
 }
+.topGames h2 {
+    margin-top: 0;
+}
 
 @media screen and (min-width: 1700px) {
     .secondBlock {
         background: linear-gradient(0deg, rgb(23, 57, 90), rgb(24, 56, 85));
     }
 }
+@media screen and (max-width: 483px) {
+    .secondBlock img {
+        width: 350px;
+    }
+    .devices div {
+        max-width: 320px;
+    }
+    .topGames h2 {
+        margin-top: 0;
+    }
+    .carouselContent {
+        max-width: 350px;
+        margin: 0;
+    }
+    #topGamesCarousel {
+        max-width: 370px;
+        margin: auto;
+    } 
+    .carouselItem {
+        max-width: 300px;
+        display: block;
+        text-align: start;
+    }
+    .carouselItem img {
+        display: block;
+        justify-content: center;
+        max-width: 200px;
+        margin-top: 10px;
+    }
+    .carouselInfo p {
+        font-size: 16px;
+        width: 250px;
+        text-align: start;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .carouselInfo h5 {
+        font-size: 26px;
+        width: 250px;
+    }
+    .teamMates img {
+        max-width: 250px;
+    }
+    #carouselExampleDark {
+        margin: auto;
+    }
+}
 
 @media screen and (min-width: 1254px) {
+    .topGames h2 {
+        margin-top: 0;
+    }
     .introduction, .navBar {
         margin-left: 200px;
     }
